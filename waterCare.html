@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정수기</title>
+    <link rel="stylesheet" href="css/sub.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/63b8cec292.js" crossorigin="anonymous"></script>
+    <script src="js/common.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body class="water-page">
+    <header id="header"></header>
+    <main id="main">
+        <section class="banner water">
+            <div class="swiper subSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="main-item">
+                            <div class="item-text">
+                                <p class="desc">혁신 기술로 완성한 시루필터와 직수의 만남</p>
+                                <h4 class="name">코웨이 시루직수 정수기</h4>
+                            </div>
+                            <img src="images/sub_wc1.png" alt="시루직수 정수기">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="main-item">
+                            <div class="item-text">
+                                <p class="desc">위생걱정 없이 똑! 소리나는 편리함</p>
+                                <h4 class="name">코웨이 나노직수 정수기_헤이지 블루</h4>
+                            </div>
+                            <img src="images/sub_wc2.png" alt="나노직수 정수기">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section class="product-wrap">
+            <div class="wrapper">
+                <div class="category-item">
+                    <button id="tab1" class="on">전체</button>
+                    <button id="tab2">냉정수기</button>
+                    <button id="tab3">얼음정수기</button>
+                    <button id="tab4">냉온정수기</button>
+                    <button id="tab5">정수전용</button>
+                </div>
+                <div class="product-list"></div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer"></footer>
+    <script>
+        var swiper = new Swiper(".subSwiper", {
+            // effect: 'fade',
+            pagination: {
+                el: '.swiper-pagination',
+                clickable : true,
+            },
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            }
+        });
+    </script>
+</body>
+</html>

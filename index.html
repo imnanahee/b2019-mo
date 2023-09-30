@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>코웨이 b2019</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/63b8cec292.js" crossorigin="anonymous"></script>
+    <script src="js/common.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body class="index-page">
+    <header id="header"></header>
+    <main id="main">
+        <section class="main-visual">
+            <div class="wrapper">
+                <h2>당신을 위한 라이프케어, 코웨이</h2>
+                <div class="swiper mainSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                        <div class="slide-wrap">
+                            <img src="images/roll_wc.png" alt="정수기">
+                            <div class="slide-text">
+                                <img src="images/wc_text.png" alt="01.정수기">
+                                <p>당신을 위한 더 새로운 물! <br>더 건강한 물로 일상의 활력을 선사합니다.</p>
+                                <a href="/waterCare.html">자세히 보기 <i class="fa-solid fa-angles-right"></i></a>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-next">
+                        <div class="slide-wrap">
+                            <img src="images/roll_ac.png" alt="공기청정기">
+                            <div class="slide-text">
+                                <img src="images/ac_text.png" alt="02.공기청정기">
+                                <p>당신을 위한 최상의 릴렉스! <br>편안한 쾌적함의 공기를 선사해드립니다.</p>
+                                <a href="waterCare.html">자세히 보기 <i class="fa-solid fa-angles-right"></i></a>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-next">
+                        <div class="slide-wrap">
+                            <img src="images/roll_bc.png" alt="비데">
+                            <div class="slide-text">
+                                <img src="images/bc_text.png" alt="03.비데">
+                                <p>당신을 위한 건강한 습관! <br>몸에 닿는 깨끗한 물로 쾌적한 컨디션을 만듭니다.</p>
+                                <a href="waterCare.html">자세히 보기 <i class="fa-solid fa-angles-right"></i></a>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-next">
+                        <div class="slide-wrap">
+                            <img src="images/roll_sc.png" alt="매트리스">
+                            <div class="slide-text">
+                                <img src="images/sc_text.png" alt="04.매트리스">
+                                <p>당신을 위한 최고의 수면! <br>개인에 꼭 맞춘 최적의 수면 환경을 제공합니다.</p>
+                                <a href="waterCare.html">자세히 보기 <i class="fa-solid fa-angles-right"></i></a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section class="best-product">
+            <div class="wrapper">
+                <h2>고객 만족 코웨이 <span>BEST</span></h2>
+                <p class="intro">코웨이의 BEST 제품들을 소개해드립니다.</p>
+                <div class="category">
+                    <button id="tab1" class="on">정수기</button>
+                    <button id="tab2">청정기</button>
+                    <button id="tab3">비데/연수기</button>
+                    <button id="tab4">매트리스</button>
+                </div>
+                <div class="product tab1"></div>
+            </div>
+        </section>
+        <section class="event-list">
+            <div class="wrapper">
+                <h2>코웨이 판매인몰 <span>EVENT</span></h2>
+                <p class="intro">판매인몰의 다양한 이벤트를 확인해보세요.</p>
+                <ul class="event">
+                    <li>
+                        <img src="images/event_1.png" alt="등록비 10만원 면제">
+                        <div class="event-content">
+                            <p>지금 신청하면,<br><span class="blue">렌탈 등록비</span>가 면제!</p>
+                            <strong>신규고객 할인<br><span class="blue">10만원</span> 전액 면제</strong>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/event_2.png" alt="최대 40% 할인">
+                        <div class="event-content">
+                            <p>지금 신청하면<br><span class="blue">최대 40%</span>까지 할인 혜택!</p>
+                            <strong>기업을 포함한 단체, 학교<br><span class="blue">특별우대</span></strong>
+                        </div>                    
+                    </li>
+                    <li>
+                        <img src="images/event_3.png" alt="최대 40% 할인">
+                        <div class="event-content">
+                            <p><span class="blue">최대 2만원</span>까지<br>청구할인 및 적립!</p>
+                            <strong>제휴카드 매월 렌탈/멤버십<br><span class="blue">요금 할인</span></strong>
+                        </div>   
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer id="footer"></footer>
+    <script>
+        var swiper = new Swiper(".mainSwiper", {
+            pagination: {
+                el: '.swiper-pagination',
+                clickable : true,
+            },
+            loop: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            }
+        });
+    </script>
+</body>
+</html>
