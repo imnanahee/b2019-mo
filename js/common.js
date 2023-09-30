@@ -43,7 +43,7 @@ const headerTemplate = `
             </div>
         </nav>
         <h1 class="logo"><a href="index.html"><img src="images/ci_skyblue.png" alt="코웨이"></a></h1>
-        <a href="/tel:0000-0000" class="direct-number"><i class="fa-solid fa-phone-volume fa-xl"></i></a>
+        <a href="tel:0000-0000" class="direct-number"><i class="fa-solid fa-phone-volume fa-xl"></i></a>
         <ul class="fixed-menu">
             <li><a href="waterCare.html">정수기</a></li>
             <li><a href="airCare.html">청정기</a></li>
