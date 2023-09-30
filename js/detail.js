@@ -1,5 +1,5 @@
 const script = document.createElement('script');
-script.src = '/js/product.js';
+script.src = 'js/product.js';
 
 script.onload = () => { 
     const detailViewList = document.querySelector('.detail-view .wrapper');
