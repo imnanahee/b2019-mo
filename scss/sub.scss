@@ -1,0 +1,193 @@
+@import 'common';
+
+.banner {
+    &.water {
+        @include bg('sub_wc_bg');
+    }
+
+    &.air {
+        @include bg('sub_ac_bg');
+    }
+
+    &.body {
+        @include bg('sub_bc_bg');
+    }
+
+    &.sleep {
+        @include bg('sub_sc_bg');
+    }
+
+    // img {
+    //     width: 100%;
+    //     height: auto;
+    // }
+
+    .main-item {
+        margin: 5%;
+        text-align: center;
+        padding-bottom: 8%;
+
+        img {
+            width: 80%;
+            height: auto;
+        }
+    }
+
+    .item-text {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        margin-top: 10%;
+        font-size: 1.3em;
+        color: $white;
+
+        .desc {
+            line-height: 28px;
+        }
+    }
+
+    .swiper-pagination {
+        margin-bottom: 3%;
+    }
+    
+    .swiper-pagination-bullet {
+        background: $white;
+
+        &.swiper-pagination-bullet-active {
+            background: $main;
+        }
+    }
+    
+}
+
+.product-wrap {
+    margin: 10% 0 20%;
+
+    .wrapper {
+        @include subWrapper;
+    }
+
+    .category-item {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-evenly;
+
+        button {
+            font-size: 1.2em;
+            padding: 2.5%;
+            width: 100%;
+            text-align: center;
+            word-break: keep-all;
+            cursor: pointer;
+            
+            &.on {
+                color: $main;
+                font-weight: 600;
+            }
+        }
+    }
+
+}
+
+.product-list {
+    .cell {
+        background-color: $goods;
+        margin-bottom: 5%;
+
+        a {
+            display: block;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .productText {
+        font-size: 1.1em;
+        padding: 0 5%;
+    }
+
+    .category {
+        color: #fff;
+        background: #1b2529;
+        font-weight: 600;
+        width: 85px;
+        padding: 6px 0;
+        border-radius: 5px;
+        letter-spacing: -0.5px;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .desc {
+        @include desc;
+        color: #555;
+        text-align: center;
+        margin: 5% 0 8%;
+    }
+
+    .colorType {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+
+        li {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            cursor: pointer;
+            position: relative;
+            border: 3px solid #eaecee;
+            
+            &.whiteNpink::before {
+                content: "";
+                position: absolute;
+                right: 0;
+                width: 13px;
+                height: 25px;
+                background: #c88796;
+                border-radius: 0 100px 100px 0;
+            }
+        }
+    
+        span {
+            @include blind;
+        }
+    }
+
+    .code {
+        @include code;
+        margin-top: 30px;
+    }
+
+    .name {
+        @include name;
+    }
+
+    .priceWrap {
+        padding: 10% 0 5%;
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 3%;
+
+            p {
+                font-size: 1.1em;
+            }
+
+            span {
+                font-size: 1.1em;
+
+                &.rentalPrice {
+                    color: $main;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

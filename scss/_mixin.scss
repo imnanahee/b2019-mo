@@ -1,0 +1,57 @@
+@mixin wrapper {
+    padding: 0 3%;
+}
+
+@mixin subWrapper {
+    padding: 0 5%;
+}
+
+@mixin bg($name, $path: "../images/", $format: "jpg") {
+    background-image: url("#{$path}#{$name}.#{$format}");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin desc {
+    font-size: 1em;
+    letter-spacing: -1px;
+    word-break: keep-all;
+}
+
+@mixin name {
+    font-size: 1.5em;
+    line-height: 42px;
+}
+
+@mixin code {
+    display: block;
+    color: #999;
+    font-size: 1em;
+}
+
+@mixin agreement {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border: 2px solid;
+    border-color: #d6d6d6;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 600;
+    color: #d6d6d6;
+    cursor: pointer;
+}
+
+@mixin blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    white-space: nowrap;
+    clip: rect(0, 0, 0, 0);
+}

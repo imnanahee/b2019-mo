@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비데/연수기</title>
+    <link rel="stylesheet" href="css/sub.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/63b8cec292.js" crossorigin="anonymous"></script>
+    <script src="js/include.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body class="body-page">
+    <header data-include-path="header.html"></header>
+    <main id="main">
+        <section class="banner body">
+            <div class="swiper subSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="main-item">
+                            <div class="item-text">
+                                <p class="desc">욕실을 더욱 세련되게 스타일케어 비데</p>
+                                <h4 class="name">코웨이 스타일케어 비데</h4>
+                            </div>
+                            <img src="images/sub_bc1.png" alt="스타일케어 비데데">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="main-item">
+                            <div class="item-text">
+                                <p class="desc">똑똑.깨끗.알뜰.비데  선택의 기준이 되다!</p>
+                                <h4 class="name">코웨이 스스로 살균 비데</h4>
+                            </div>
+                            <img src="images/sub_bc2.png" alt="스스로 살균 비데">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section class="product-wrap">
+            <div class="wrapper">
+                <div class="category-item">
+                    <button id="tab1" class="on">전체</button>
+                    <button id="tab2">비데</button>
+                    <button id="tab3">연수기</button>
+                </div>
+                <div class="product-list"></div>
+            </div>
+        </section>
+    </main>
+    <footer data-include-path="footer.html"></footer>
+    <script>
+        var swiper = new Swiper(".subSwiper", {
+            // effect: 'fade',
+            pagination: {
+                el: '.swiper-pagination',
+                clickable : true,
+            },
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            }
+        });
+    </script>
+</body>
+</html>

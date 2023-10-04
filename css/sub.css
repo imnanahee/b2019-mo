@@ -1,0 +1,441 @@
+@charset "UTF-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css");
+body {
+  margin: 0;
+  font-family: Pretendard, Apple SD Gothic Neo, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  font-family: Pretendard, Apple SD Gothic Neo, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  letter-spacing: -0.5px;
+}
+
+html, body {
+  height: 100%;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd,
+q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot,
+thead, tr, td, th, article, aside, canvas, details, embed, figure, figcaption, #footer, #header, hgroup, menu, nav, output, ruby, section, summary, time, mark,
+audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, #footer, #header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  color: #333;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote::before, blockquote::after, q::before, q::after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+input[type=text] {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+
+button {
+  all: unset;
+}
+
+address {
+  font-style: normal;
+}
+
+.hidden {
+  overflow-y: hidden;
+}
+
+/* 반응형 화면 크기 */
+#header {
+  height: 65px;
+  border-bottom: 1px solid #eee;
+}
+#header .menu-list {
+  padding: 0 3%;
+  position: absolute;
+  cursor: pointer;
+}
+#header .menu-list .menu {
+  line-height: 65px;
+  color: #34b0dd;
+}
+#header .menu-list .wrapper {
+  padding: 0 3%;
+}
+#header .menu-list .menu-wrap {
+  position: fixed;
+  top: 0;
+  left: auto;
+  left: -100vw;
+  width: 100vw;
+  height: 100%;
+  max-height: 100vh;
+  z-index: 5;
+  background-color: #fff;
+  -webkit-transition: left 0.3s ease-out;
+  transition: left 0.3s ease-out;
+}
+#header .menu-list .menu-wrap.show {
+  left: 0;
+  transition: left 0.3s ease-out;
+  overflow-y: scroll;
+}
+#header .menu-list .menu-wrap .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 55px;
+  line-height: 55px;
+  padding: 0 20px;
+}
+#header .menu-list .menu-wrap .srch-wrap {
+  margin-top: 15%;
+  position: relative;
+}
+#header .menu-list .menu-wrap #srch-form {
+  border: 1px solid #34b0dd;
+  width: 100%;
+  height: 45px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+#header .menu-list .menu-wrap #srch-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 5%;
+  color: #34b0dd;
+}
+#header .menu-list .nav-menu {
+  margin-top: 10%;
+  padding: 10% 0;
+  border-top: 1px solid #888;
+}
+#header .menu-list .nav-menu dl {
+  margin-bottom: 8%;
+}
+#header .menu-list .nav-menu dl > * {
+  line-height: 35px;
+}
+#header .menu-list .nav-menu dl a {
+  display: block;
+}
+#header .menu-list .nav-menu dd {
+  font-weight: 600;
+}
+#header .menu-list .nav-menu dt a {
+  color: #34b0dd;
+  letter-spacing: -0.5px;
+  font-size: 0.9em;
+}
+#header .menu-list .recommend {
+  text-align: center;
+}
+#header .menu-list .recommend a {
+  display: inline-block;
+  height: 35px;
+  line-height: 35px;
+  font-size: 0.9em;
+}
+#header .menu-list .recommend a:not(:last-child)::after {
+  content: "";
+  display: inline-block;
+  height: 10px;
+  width: 1px;
+  background: #454545;
+  margin: 0 10px;
+}
+#header .logo {
+  width: calc(100% - 200px);
+  margin: 0 auto;
+  text-align: center;
+}
+#header .logo a {
+  display: block;
+  height: 65px;
+  line-height: 80px;
+}
+#header .fixed-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 5px 5px 10px 0px rgba(42, 42, 42, 0.18);
+}
+#header .fixed-menu.fixed {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#header .fixed-menu li {
+  width: 100%;
+  text-align: center;
+}
+#header .fixed-menu li a {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+}
+#header .direct-number {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 3%;
+  color: #34b0dd;
+  font-weight: 600;
+}
+#header .direct-number i {
+  line-height: 65px;
+}
+
+#main {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+#footer {
+  background-color: #ddd;
+  color: #5b5b5b;
+}
+#footer .wrapper {
+  padding: 40px 3%;
+}
+#footer ul {
+  display: flex;
+  justify-content: center;
+  font-size: 0.9em;
+}
+#footer ul li:not(:last-child)::after {
+  content: "";
+  display: inline-block;
+  height: 10px;
+  width: 1px;
+  background: #333;
+  margin: 0 10px;
+}
+#footer address {
+  margin-top: 5%;
+  text-align: center;
+}
+#footer address p {
+  line-height: 20px;
+  letter-spacing: -1px;
+  font-size: 0.9em;
+  word-break: keep-all;
+}
+
+.banner.water {
+  background-image: url("../images/sub_wc_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner.air {
+  background-image: url("../images/sub_ac_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner.body {
+  background-image: url("../images/sub_bc_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner.sleep {
+  background-image: url("../images/sub_sc_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner .main-item {
+  margin: 5%;
+  text-align: center;
+  padding-bottom: 8%;
+}
+.banner .main-item img {
+  width: 80%;
+  height: auto;
+}
+.banner .item-text {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin-top: 10%;
+  font-size: 1.3em;
+  color: #fff;
+}
+.banner .item-text .desc {
+  line-height: 28px;
+}
+.banner .swiper-pagination {
+  margin-bottom: 3%;
+}
+.banner .swiper-pagination-bullet {
+  background: #fff;
+}
+.banner .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #34b0dd;
+}
+
+.product-wrap {
+  margin: 10% 0 20%;
+}
+.product-wrap .wrapper {
+  padding: 0 5%;
+}
+.product-wrap .category-item {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.product-wrap .category-item button {
+  font-size: 1.2em;
+  padding: 2.5%;
+  width: 100%;
+  text-align: center;
+  word-break: keep-all;
+  cursor: pointer;
+}
+.product-wrap .category-item button.on {
+  color: #34b0dd;
+  font-weight: 600;
+}
+
+.product-list .cell {
+  background-color: #f1f3f4;
+  margin-bottom: 5%;
+}
+.product-list .cell a {
+  display: block;
+}
+.product-list .cell img {
+  width: 100%;
+  height: auto;
+}
+.product-list .productText {
+  font-size: 1.1em;
+  padding: 0 5%;
+}
+.product-list .category {
+  color: #fff;
+  background: #1b2529;
+  font-weight: 600;
+  width: 85px;
+  padding: 6px 0;
+  border-radius: 5px;
+  letter-spacing: -0.5px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+.product-list .desc {
+  font-size: 1em;
+  letter-spacing: -1px;
+  word-break: keep-all;
+  color: #555;
+  text-align: center;
+  margin: 5% 0 8%;
+}
+.product-list .colorType {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.product-list .colorType li {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  border: 3px solid #eaecee;
+}
+.product-list .colorType li.whiteNpink::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 13px;
+  height: 25px;
+  background: #c88796;
+  border-radius: 0 100px 100px 0;
+}
+.product-list .colorType span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  white-space: nowrap;
+  clip: rect(0, 0, 0, 0);
+}
+.product-list .code {
+  display: block;
+  color: #999;
+  font-size: 1em;
+  margin-top: 30px;
+}
+.product-list .name {
+  font-size: 1.5em;
+  line-height: 42px;
+}
+.product-list .priceWrap {
+  padding: 10% 0 5%;
+}
+.product-list .priceWrap li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3%;
+}
+.product-list .priceWrap li p {
+  font-size: 1.1em;
+}
+.product-list .priceWrap li span {
+  font-size: 1.1em;
+}
+.product-list .priceWrap li span.rentalPrice {
+  color: #34b0dd;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=sub.css.map */
