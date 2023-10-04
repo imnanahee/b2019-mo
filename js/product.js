@@ -2,7 +2,7 @@ const products = [
     {
         id: 11,
         title: "정수기",
-        imgSrc: '/images/product/water_1.png',
+        imgSrc: 'images/product/water_1.png',
         alt: "프라임 정수기 2.0",
         subText: "총 108가지 유해 물질을 깐깐하게 거르는 깨끗함",
         state: ["BEST"],
@@ -40,7 +40,7 @@ const products = [
     {
         id: 12,
         title: "정수기",
-        imgSrc: '/images/product/water_2.png',
+        imgSrc: 'images/product/water_2.png',
         alt: "아이콘 얼음정수기",
         subText: "빠른 제빙 속도로 얼음을 늘 신선하게!",
         state: [
@@ -92,7 +92,7 @@ const products = [
     {
         id: 13,
         title: "정수기",
-        imgSrc: '/images/product/water_3.png',
+        imgSrc: 'images/product/water_3.png',
         alt: "엘리트 정수기",
         subText: "똑똑하게, 필요한 모든 것을 담은 정수기",
         state: ["NEW"],
@@ -127,7 +127,7 @@ const products = [
     {
         id: 14,
         title: "정수기",
-        imgSrc: '/images/product/water_4.png',
+        imgSrc: 'images/product/water_4.png',
         alt: "프라임 스탠드",
         subText: "넉넉한 용량에 강화된 위생까지",
         state: [
@@ -165,7 +165,7 @@ const products = [
     {
         id: 15,
         title: "정수기",
-        imgSrc: '/images/product/water_5.png',
+        imgSrc: 'images/product/water_5.png',
         alt: "아이콘 정수기 2",
         subText: "콤팩트한 사이즈는 그대로, 관리와 편의 기능은 업그레이드",
         state: [
@@ -228,7 +228,7 @@ const products = [
     {
         id: 16,
         title: "정수기",
-        imgSrc: '/images/product/water_6.png',
+        imgSrc: 'images/product/water_6.png',
         alt: "빌트인 정수기",
         subText: "15cm 공간으로 깨끗한 직수를 풍부하게!",
         state: [],
@@ -263,7 +263,7 @@ const products = [
     {
         id: 21,
         title: "청정기",
-        imgSrc: '/images/product/ac_1.png',
+        imgSrc: 'images/product/ac_1.png',
         alt: "벽걸이 공기청정기",
         subText: "넓은 공간을 청정하고 초미세먼지 수치를 실시간으로 확인!",
         state: [],
@@ -297,7 +297,7 @@ const products = [
     {
         id: 22,
         title: "청정기",
-        imgSrc: '/images/product/ac_2.png',
+        imgSrc: 'images/product/ac_2.png',
         alt: "멀티액션 공기청정기",
         subText: "실시간으로 초미세먼지 수치를 확인!",
         state: ["프로모션 진행중"],
@@ -338,7 +338,7 @@ const products = [
     {
         id: 23,
         title: "청정기",
-        imgSrc: '/images/product/ac_3.png',
+        imgSrc: 'images/product/ac_3.png',
         alt: "콰트로파워 공기청정기",
         subText: "넓은 공간까지 빈틈없이 구석구석 청정!",
         state: [
@@ -381,7 +381,7 @@ const products = [
     {
         id: 24,
         title: "청정기",
-        imgSrc: '/images/product/ac_4.png',
+        imgSrc: 'images/product/ac_4.png',
         alt: "사계절 의류청정기 더블케어",
         subText: "의류 케어에서 공간 케어까지 두 배로 넓어진 능력",
         state: ["BEST"],
@@ -424,7 +424,7 @@ const products = [
     {
         id: 25,
         title: "청정기",
-        imgSrc: '/images/product/ac_5.png',
+        imgSrc: 'images/product/ac_5.png',
         alt: "아이콘 공기청정기",
         subText: "감각적인 소재와 디자인으로 조화로운 인테리어 공기청정기!",
         state: [
@@ -474,7 +474,7 @@ const products = [
     {
         id: 26,
         title: "청정기",
-        imgSrc: '/images/product/ac_6.png',
+        imgSrc: 'images/product/ac_6.png',
         alt: "듀얼클린 가습공기청정기",
         subText: "청정한 공기부터 위생적인 가습까지 하나로!",
         state: ["BEST"],
@@ -516,7 +516,7 @@ const products = [
     {
         id: 31,
         title: "비데/연수기",
-        imgSrc: '/images/product/bc_1.png',
+        imgSrc: 'images/product/bc_1.png',
         alt: "스스로케어 비데(저수압 특화)",
         subText: "스스로 케어하고, 약한 수압도 문제 없는 저수압용 비데",
         state: [
@@ -554,7 +554,7 @@ const products = [
     {
         id: 32,
         title: "비데/연수기",
-        imgSrc: '/images/product/bc_2.png',
+        imgSrc: 'images/product/bc_2.png',
         alt: "더블케어 플러스 비데",
         subText: "완벽한 위생에 자동 개폐로 편의성까지!",
         state: ["프로모션 진행중"],
@@ -592,7 +592,7 @@ const products = [
     {
         id: 33,
         title: "비데/연수기",
-        imgSrc: '/images/product/bc_3.png',
+        imgSrc: 'images/product/bc_3.png',
         alt: "스타일케어 비데",
         subText: "욕실을 더욱 세련되게, 콤팩트하고 스타일리시하게",
         state: [
@@ -633,7 +633,7 @@ const products = [
     {
         id: 34,
         title: "비데/연수기",
-        imgSrc: '/images/product/bc_4.png',
+        imgSrc: 'images/product/bc_4.png',
         alt: "프라임 비데 A",
         subText: "맞춤 기능이 있는 기본에 강한 비데",
         state: ["프로모션 진행중"],
@@ -668,7 +668,7 @@ const products = [
     {
         id: 35,
         title: "비데/연수기",
-        imgSrc: '/images/product/bc_5.png',
+        imgSrc: 'images/product/bc_5.png',
         alt: "연수기(BB15-A)",
         subText: "깨끗하고 윤기있는 피부, 365일 부드럽게 케어",
         state: ["프로모션 진행중"],
@@ -709,7 +709,7 @@ const products = [
     {
         id: 36,
         title: "비데/연수기",
-        imgSrc: '/images/product/bc_6.png',
+        imgSrc: 'images/product/bc_6.png',
         alt: "프라임 비데",
         subText: "사용자를 생각한 다양한 세정으로 깔끔하게",
         state: ["온라인전용"],
@@ -739,7 +739,7 @@ const products = [
     {
         id: 41,
         title: "매트리스/프레임",
-        imgSrc: '/images/product/sc_1.png',
+        imgSrc: 'images/product/sc_1.png',
         alt: "탑퍼교체 매트리스 하이브리드4",
         subText: "클라우드 메모리폼과 AD7 System으로 내 몸에 맞춘 편안함",
         state: [
@@ -781,7 +781,7 @@ const products = [
     {
         id: 42,
         title: "매트리스/프레임",
-        imgSrc: '/images/product/sc_2.png',
+        imgSrc: 'images/product/sc_2.png',
         alt: "스마트 매트리스 S7",
         subText: "나에게 딱 맞는 수면 환경의 혁신",
         state: [
@@ -821,7 +821,7 @@ const products = [
     {
         id: 43,
         title: "매트리스/프레임",
-        imgSrc: '/images/product/sc_3.png',
+        imgSrc: 'images/product/sc_3.png',
         alt: "마이 프레임 (사이드형)",
         subText: "내 마음대로 고르고 디자인하는 나만의 침대",
         state: [
@@ -892,7 +892,7 @@ const products = [
     {
         id: 44,
         title: "매트리스/프레임",
-        imgSrc: '/images/product/sc_4.png',
+        imgSrc: 'images/product/sc_4.png',
         alt: "탑퍼교체 매트리스 프라임",
         subText: "신체 부위별로 최적화된 편안함, 컨투어 5존 폼 탑퍼",
         state: [
@@ -935,7 +935,7 @@ const products = [
     {
         id: 45,
         title: "매트리스/프레임",
-        imgSrc: '/images/product/sc_5.png',
+        imgSrc: 'images/product/sc_5.png',
         alt: "커버교체 원바디 2 매트리스",
         subText: "매트리스와 프레임, 올인원으로 컴팩트하게",
         state: [
@@ -984,7 +984,7 @@ const products = [
     {
         id: 46,
         title: "매트리스/프레임",
-        imgSrc: '/images/product/sc_6.png',
+        imgSrc: 'images/product/sc_6.png',
         alt: "마이 프레임 (기본형)",
         subText: "내 마음대로 고르고 디자인하는 나만의 침대",
         state: [
