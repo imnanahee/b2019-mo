@@ -329,6 +329,9 @@ section .intro {
   display: block;
   text-align: right;
 }
+.main-visual .swiper-pagination {
+  z-index: inherit;
+}
 .main-visual .swiper-pagination-bullet-active {
   background-color: #34b0dd;
 }
