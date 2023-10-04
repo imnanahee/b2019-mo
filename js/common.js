@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // 상품 데이터와 검색어 일치하는 상품 찾기
         const matchedProduct = products.find(product => product.alt.includes(searchTerm));
         if (matchedProduct) {
-            const productURL = `/detail.html?product_id=${matchedProduct.id}`;
+            const productURL = `detail.html?product_id=${matchedProduct.id}`;
             window.location.href = productURL;
         } else {
             alert('검색 결과가 없습니다.');
