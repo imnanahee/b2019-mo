@@ -60,10 +60,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (target.classList.contains('menu')) {
             target.nextElementSibling.classList.add('show');
+            document.documentElement.classList.add('hidden');
+            document.body.classList.add('hidden');
         }
 
         if (target.classList.contains('close')) {
             target.parentElement.classList.remove('show');
+            document.documentElement.classList.remove('hidden');
+            document.body.classList.remove('hidden');
         }
 
         if (e.target.id === 'srch-btn') {
