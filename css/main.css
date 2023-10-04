@@ -292,6 +292,9 @@ section .intro {
   padding-top: 40px;
   z-index: inherit;
 }
+.main-visual .swiper-wrapper {
+  z-index: inherit;
+}
 .main-visual .swiper-slide {
   width: 100% !important;
 }
