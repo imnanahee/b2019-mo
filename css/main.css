@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css");
 body {
   margin: 0;
@@ -74,6 +75,7 @@ address {
   font-style: normal;
 }
 
+/* 반응형 화면 크기 */
 #header {
   height: 65px;
   border-bottom: 1px solid #eee;
@@ -276,7 +278,7 @@ section .intro {
 }
 
 .main-visual {
-  background-image: url("/images/main_visual.jpg");
+  background-image: url("../images/main_visual.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 50px;
