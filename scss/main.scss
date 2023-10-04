@@ -27,11 +27,6 @@ section {
 
     .mainSwiper {
         padding-top: 40px;
-        z-index: inherit;
-    }
-
-    .swiper-wrapper {
-        z-index: inherit;
     }
 
     .swiper-slide {
@@ -75,13 +70,13 @@ section {
         }
     }
 
-    .swiper-pagination {
-        z-index: inherit;
-    }
-
     .swiper-pagination-bullet-active {
         background-color: $main;
     }
+
+    // .mainSwiper {
+    //     padding: 0 5%;
+    // }
 }
 
 .best-product {
