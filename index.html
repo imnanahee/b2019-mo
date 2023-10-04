@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/63b8cec292.js" crossorigin="anonymous"></script>
+    <script src="js/include.js"></script>
     <script src="js/common.js"></script>
     <script src="js/script.js"></script>
 </head>
 <body class="index-page">
-    <header id="header"></header>
+    <header data-include-path="header.html"></header>
     <main id="main">
         <section class="main-visual">
             <div class="wrapper">
@@ -106,7 +107,7 @@
             </div>
         </section>
     </main>
-    <footer id="footer"></footer>
+    <footer data-include-path="footer.html"></footer>
     <script>
         var swiper = new Swiper(".mainSwiper", {
             pagination: {
