@@ -290,6 +290,7 @@ section .intro {
 }
 .main-visual .mainSwiper {
   padding-top: 40px;
+  z-index: inherit;
 }
 .main-visual .swiper-slide {
   width: 100% !important;
