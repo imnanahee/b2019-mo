@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.classList.remove('hidden');
         }
 
-        if (e.target.id === 'srch-btn') {
+        if (target.id === 'srch-btn') {
             performSearch();
         }
 
