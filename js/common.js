@@ -20,14 +20,13 @@ const commonNavHandler = () => {
         window.location.href = subURL;
         location.reload();
     }
-
+    
     // 각각의 메뉴에 대한 이벤트 핸들러 등록
     const navMenus = document.querySelectorAll('.nav-menu dl');
     navMenus.forEach((dl, dlIndex) => {
         const ddList = dl.querySelectorAll('dd');
         ddList.forEach((dd, ddIndex) => {
             dd.addEventListener('click', () => {
-                console.log(dlIndex); console.log(ddIndex);
                 const categoryLists = [['tab2', 'tab3', 'tab4', 'tab5'], ['tab2', 'tab3', 'tab4'], ['tab2', 'tab3'], ['tab2', 'tab3']];
                 const selectedCategories = categoryLists[dlIndex];
                 navigateToCategory(ddIndex, selectedCategories);
@@ -36,7 +35,13 @@ const commonNavHandler = () => {
     });
 }
 
-document.addEventListener('DOMContentLoaded', () => { 
+// 페이지가 로드될 때 스크롤 처리
+window.addEventListener('load', () => {
+    const hash = window.location.hash;
+    if (hash) window.scrollTo(0, 0);
+});
+
+document.addEventListener('DOMContentLoaded', () => {
     // 검색 기능 실행
     const performSearch = () => {
         const searchInput = document.getElementById('srch-form');
@@ -108,9 +113,7 @@ window.addEventListener('scroll', () => {
             fixedMenu.classList.remove('fixed');
         }
     }
-
-})
-
+});
 
 // 3자리마다 콤마 (가격, 렌탈가)
 const commaCheck = (e) => {
