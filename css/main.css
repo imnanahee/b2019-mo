@@ -84,12 +84,10 @@ address {
   height: 65px;
   border-bottom: 1px solid #eee;
 }
-#header .menu-list {
+#header .menu-list .menu {
   padding: 0 3%;
   position: absolute;
   cursor: pointer;
-}
-#header .menu-list .menu {
   line-height: 65px;
   color: #34b0dd;
 }

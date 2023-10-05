@@ -8,11 +8,10 @@
     // }
 
     .menu-list {
-        padding: 0 3%;
-        position: absolute;
-        cursor: pointer;
-
         .menu {
+            padding: 0 3%;
+            position: absolute;
+            cursor: pointer;
             line-height: 65px;
             color: $main;
         }
