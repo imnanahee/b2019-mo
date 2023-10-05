@@ -12,26 +12,7 @@ const createTipContent = `
     </dl>
 `;
 
-
-document.addEventListener('DOMContentLoaded', () => { 
-    // 검색 기능 실행
-    const performSearch = () => {
-        const searchInput = document.getElementById('srch-form');
-        const searchTerm = searchInput.value.trim();
-
-        if (searchTerm === '') return;
-
-        // 상품 데이터와 검색어 일치하는 상품 찾기
-        const matchedProduct = products.find(product => product.alt.includes(searchTerm));
-        if (matchedProduct) {
-            const productURL = `./detail.html?product_id=${matchedProduct.id}`;
-            window.location.href = productURL;
-        } else {
-            alert('검색 결과가 없습니다.');
-        }
-    }
-
-
+const commonNavHandler = () => {
     // nav 메뉴 클릭 시 해당되는 카테고리로 이동하는 공통 함수
     const navigateToCategory = (index, categories) => {
         const category  = categories[index];
@@ -53,6 +34,25 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     });
+}
+
+document.addEventListener('DOMContentLoaded', () => { 
+    // 검색 기능 실행
+    const performSearch = () => {
+        const searchInput = document.getElementById('srch-form');
+        const searchTerm = searchInput.value.trim();
+
+        if (searchTerm === '') return;
+
+        // 상품 데이터와 검색어 일치하는 상품 찾기
+        const matchedProduct = products.find(product => product.alt.includes(searchTerm));
+        if (matchedProduct) {
+            const productURL = `./detail.html?product_id=${matchedProduct.id}`;
+            window.location.href = productURL;
+        } else {
+            alert('검색 결과가 없습니다.');
+        }
+    }
 
     // 검색 버튼 클릭 및 Enter 키 입력 이벤트 처리
     document.addEventListener('click', (e) => {
@@ -72,6 +72,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (target.id === 'srch-btn') {
             performSearch();
+        }
+
+        if (target.matches('.nav-menu dl dd')) {
+            const dl = target.closest('dl');
+            const dlIndex = Array.from(dl.parentNode.children).indexOf(dl);
+            const ddIndex = Array.from(dl.querySelectorAll('dd')).indexOf(target);
+            const categoryLists = [['tab2', 'tab3', 'tab4', 'tab5'], ['tab2', 'tab3', 'tab4'], ['tab2', 'tab3'], ['tab2', 'tab3']];
+            const selectedCategories = categoryLists[dlIndex];
+            navigateToCategory(ddIndex, selectedCategories);
         }
 
     });
